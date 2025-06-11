@@ -20,7 +20,6 @@ public class OrderTest {
 
     private WebDriver driver;
 
-
     @BeforeEach
     public void optionsForTests(){
         //driver = new ChromeDriver();
