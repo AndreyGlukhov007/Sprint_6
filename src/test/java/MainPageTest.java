@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.Duration;
 
-// текст чтобы внести изменения в Git 1
+// текст чтобы внести изменения в Git 2
 
 public class MainPageTest {
 
