@@ -12,6 +12,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.Duration;
 
+// текст чтобы внести изменения в Git 1
+
 public class MainPageTest {
 
     private WebDriver driver;

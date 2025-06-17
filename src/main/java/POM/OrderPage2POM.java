@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+// текст чтобы внести изменения в Git 1
+
 public class OrderPage2POM {
 
     private WebDriver driver;
@@ -63,4 +65,5 @@ public class OrderPage2POM {
     public void  clickButtonSeeStatus(){
         driver.findElement(buttonSeeStatus).click();
     }
+
 }
