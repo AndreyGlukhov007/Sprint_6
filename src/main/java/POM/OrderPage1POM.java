@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-// текст чтобы внести изменения в Git 2
+// текст чтобы внести изменения в Git 3
 
 public class OrderPage1POM {
 
