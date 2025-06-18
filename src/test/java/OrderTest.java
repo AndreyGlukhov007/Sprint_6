@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-// текст чтобы внести изменения в Git 5
+// текст чтобы внести изменения в Git 6
 
 public class OrderTest {
 
