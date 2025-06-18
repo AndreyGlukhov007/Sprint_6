@@ -12,7 +12,7 @@ import java.time.Duration;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
-// текст чтобы внести изменения в Git 4
+// текст чтобы внести изменения в Git 5
 
 public class MainPagePOM {
 
