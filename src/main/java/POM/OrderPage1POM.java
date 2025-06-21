@@ -8,8 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-// текст чтобы внести изменения в Git 6
-
 public class OrderPage1POM {
 
     private WebDriver driver;

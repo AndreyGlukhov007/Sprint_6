@@ -1,18 +1,7 @@
 package POM;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-import java.util.Map;
-import java.util.NoSuchElementException;
-
-// текст чтобы внести изменения в Git 6
 
 public class MainPagePOM {
 
@@ -21,14 +10,24 @@ public class MainPagePOM {
     private By coociesClick = By.id("rcc-confirm-button");
     //Выпадающий список с текстом "Сколько это стоит? И как оплатить?".
     private By dropdown0 = By.id("accordion__heading-0");
-    //private By dropdown0 = By.xpath("//div[@id='accordion__heading-0']");
-    //Можно ли продлить заказ или вернуть самокат раньше?".
+    //Выпадающий список с текстом "Хочу сразу несколько самокатов! Так можно?".
+    private By dropdown1 = By.id("accordion__heading-1");
+    //Выпадающий список с текстом "Как рассчитывается время аренды?".
+    private By dropdown2 = By.id("accordion__heading-2");
+    //Выпадающий список с текстом "Можно ли заказать самокат прямо на сегодня?".
+    private By dropdown3 = By.id("accordion__heading-3");
+    //Выпадающий список с текстом "Можно ли продлить заказ или вернуть самокат раньше?".
     private By dropdown4 = By.id("accordion__heading-4");
+    //Выпадающий список с текстом "Вы привозите зарядку вместе с самокатом?"
+    private By dropdown5 = By.id("accordion__heading-5");
+    //Выпадающий список с текстом "Можно ли отменить заказ?"
+    private By dropdown6 = By.id("accordion__heading-6");
+    //Выпадающий список с текстом "Я жизу за МКАДом, привезёте?"
+    private By dropdown7 = By.id("accordion__heading-7");
     //Верхняя кнопка "Заказать" находящаяся на хедере.
     private By buttonOrderUp = By.xpath("//button[@class='Button_Button__ra12g']");
     //Нижняя кнопка "Заказать" находящаяся внизу страницы.
     private By buttonOrderDown = By.xpath("//button[@class='Button_Button__ra12g Button_UltraBig__UU3Lp']");
-
 
     public MainPagePOM(WebDriver driver){
         this.driver=driver;
@@ -40,18 +39,15 @@ public class MainPagePOM {
     }
 
     //Раскрыть выпадающий список с текстом "Сколько это стоит? И как оплатить?"
-    public void clickToDropdown0(){
-        driver.findElement(dropdown0).click();
+    public void clickToDropdown0(){ driver.findElement(dropdown0).click(); }
 
-    }
     //Можно ли продлить заказ или вернуть самокат раньше?"
     public void clickToDropdown4(){
         driver.findElement(dropdown4).click();
     }
-    //Это так называемый ШАГ, который объединяет в себе сразу 2-ва методы описанных выше
-    public void clickToAllDropdown(){
-        clickToDropdown0();
-        clickToDropdown4();
+
+    public void clickToDropdownForParameterizedTest(String locator){
+        driver.findElement((By.id(locator))).click();
     }
 
     public void clickToButtonOrderUp(){

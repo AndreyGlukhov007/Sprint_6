@@ -16,20 +16,20 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-// текст чтобы внести изменения в Git 6
-
 public class OrderTest {
 
     private WebDriver driver;
 
     @BeforeEach
     public void optionsForTests(){
+        /*
+        Я оставил строчку 30 для того чтобы проверить работу браузера GoogleChrome. Я раскомментирную строчку 30 и закомментирую строчку 31, и тем самым запущу
+        тесты в GoogleChrome. Возможно есть более изящный способ провести кроссбраузерное тестирование, но я только учусь и о других способах не знаю. Если для прохождения
+        спринта мне нужно будет удалить 30-ую строчку я это сделаю.
+         */
         //driver = new ChromeDriver();
-        FirefoxDriver firefoxDriverOptions = new FirefoxDriver();
         driver = new FirefoxDriver();
-        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // это ожидание можно удалить.
         driver.manage().window().maximize();
-
         driver.get("https://qa-scooter.praktikum-services.ru/");
     }
 
